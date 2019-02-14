@@ -1,0 +1,84 @@
+/*
+Style sheet comment section
+*/
+ul {
+	list-style-type: none;
+	margin: 0 ;
+	padding: 0;
+}
+li a {
+	display: block;
+	width:250px;
+	margin:30px;
+}
+button {
+	font-size:12pt;
+	border-radius: 18px;
+	padding : 7px 20px;
+	
+}
+body {
+	background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/d-Wgo33/beautiful-mediterranean-simple-scenery-blue-sky-rippled-water-surface-sun-reflection-serene-sea-waterscape-greece-sunny-day_hnnrcfl4g_thumbnail-full01.png");
+	background-repeat: no repeat;
+	background-size: cover;
+	
+}
+table {
+	border-collapse: collapse;
+	border: 3px solid black;
+	margin-top:-200px;
+	margin-right:auto;
+	margin-left:auto;
+	background:	rgb(211,211,211);
+	width:60%;
+	
+}
+
+tr td:nth-child(1) {
+	text-align:center;
+}
+
+.box {
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#stats {
+    position:sticky;
+    margin-top: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#home {
+	
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+th{
+	padding: 10px;
+	text-align: left;
+	font-size: 20pt;
+}
+td {
+	padding: 8px;
+	text-align:left;
+	font-size:18pt;
+}
+.container {
+    
+	margin-left:auto;
+	margin-right:auto;	
+}
+#d {
+    margin-top:auto;
+    margin-bottom: auton;
+}
+
+
+
+

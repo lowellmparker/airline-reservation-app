@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-	<title>Airline-Reservations</title>
+	<title>Flight Information</title>
 	<meta name="Viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -18,18 +18,21 @@
 <li>	<a href="/cancellations.html"><button id="cancel">Cancel a flight...</button></a></li>
 </ul>
 </div>
+<div id="ftab">
 
-
-	
-</body>
-
-<div id = "home">
-<h1>Welcome to the Airline Reservation System</h1>
-<table id="max"></table>
-<table id="min"></table>
-<table id="avg"></table>
-<table id="total"></table>
-
+<table>
+    <caption id="cap"></caption>
+	<tbody id="flights">
+	<tr><th>Flight Number:</th>
+		<th>Departure:</th>
+		<th>Arrival:</th>
+		<th>Price:</th>   
+    </tr>
+    
+</tbody>
+</table>
 </div>
-<script src="/meat.js"></script>
+
+</body>
+<script src="/flights.js"></script>
 </html>

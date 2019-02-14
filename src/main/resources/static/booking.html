@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+	<title>Bookings</title>
+	<meta name="Viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="navigation">
+
+<ul>
+<li>	<a href="/index.html"><button id="home">Home</button></a></li>
+<li>	<a href="/Information.html"><button id="custies">Current Information</button></a> </li>
+<li>	<a href="/flightInformation.html"><button id="currentflights">Current Flights</button></a></li>
+<li>	<a href="/booking.html"><button id="book">Book a flight!</button></a></li>
+<li>	<a href="/cancellations.html"><button id="cancel">Cancel a flight...</button></a></li>
+</ul>
+</div>
+
+<div id="c" >
+    <label>Select a Customer</label>
+    <select id="cselect">
+        <option value="">Please select Customer:</option>
+        <option value="1">Gabriele Doddemeede </option>
+        <option value="2">Jonathon Jee</option>
+        <option value="3">Verine Caton</option>
+        <option value="4">Nicolai Le Sarr</option>
+        <option value="5">Christoffer Aughton</option>
+        <option value="6">Tye Collcutt</option>
+        <option value="7">Eloisa Loxton</option>
+        <option value="7">Donn Soars</option>
+        <option value="8">Roddie Jehaes</option>
+        <option value="9">Verna Rivers</option>
+        <option value="10">Drusie Gonin</option>
+        <option value="11">Fairfax Pestor</option>
+        <option value="12">Gypsy Reynard</option>
+        <option value="13">Renie Heeps</option>
+        <option value="14">Jeanette Gucustomer_idelli</option>
+        <option value="15">Rosalinde McDunlevy</option>
+        <option value="16">Juditha Waldera</option>
+        <option value="17">Chastity Soulsby</option>
+        <option value="18">Bettina Brockington</option>
+        <option value="19">Sharron Twelvetrees</option>
+        <option value="20">Antonino Birden</option>
+        <option value="21">Gaile Spacey</option>
+        <option value="23">Helli Hyne</option>
+        <option value="24">Pansy Lawn</option>
+        <option value="25">Bryon Allwright</option>
+        </select>
+
+<br>
+
+
+<label for="depart" >Departing From:</label>
+<select id="d" >
+        <option value=" "> --Choose city of departure: </option>
+        <option value="Chrysoúpolis">Chrysoúpolis</option>
+        <option value="Rossosh’">Rossosh’</option>
+        <option value="Carot">Carot</option>
+        <option value="Pallisa">Pallisa</option>
+        <option value="	Angelochóri">	Angelochóri</option>
+        <option value="Ipoh">Ipoh</option>
+        <option value="Bongandanga">Bongandanga</option>
+        <option value="Somita">Somita</option>
+        <option value="Dami">Dami</option>
+        <option value="Sindangsari">Sindangsari</option>
+        <option value="Pa Phayom">Pa Phayom</option>
+        <option value="	Ribeirão Preto">Ribeirão Preto</option>
+        <option value="Babatngon">Babatngon</option>
+        <option value="Paagahan">Paagahan</option>
+        <option value="Rudnya">Rudnya</option>
+        <option value="Marićka">Marićka</option>
+        <option value="São Luiz Gonzaga">São Luiz Gonzaga</option>
+        <option value="Tejakalapa">Tejakalapa</option>
+        <option value="Arras">Arras</option>
+        <option value="Bandaragung">Bandaragung</option>
+        <option value="Sakura">Sakura</option>
+        <option value="Xiji">Xiji</option>
+        <option value="Javelera">Javelera</option>
+        <option value="Qiqin">Qiqin</option>
+        <option value="Sumberbening">Sumberbening</option>
+        <option value="Boñgalon">Boñgalon</option>
+        <option value="Guamal">Guamal</option>
+        <option value="Dachang">Dachang</option>
+        <option value="Ketawang">Ketawang</option>
+        <option value="Sagana">Sagana</option>
+        <option value="Otun">Otun</option>
+        <option value="Kafr Şaqr">Kafr Şaqr</option>
+        <option value="Jasieniec">Jasieniec</option>
+        <option value="Paris 20">Paris 20</option>
+        <option value="Banjar Banyuning Barat">Banjar Banyuning Barat</option>
+        <option value="Mira">Mira</option>
+        <option value="Åkersberga">Åkersberga</option>
+        <option value="Magsaysay">Magsaysay</option>
+        <option value="Golug">Golug </option>
+        <option value="Granja">Granja</option>
+        <option value="Starryy Togul">Staryy Togul</option>
+        <option value="Bačka Topola">Bačka Topola</option>
+        <option value="Vetlanda">Vetlanda</option>
+        <option value="Kyshtym">Kyshtym</option>
+        <option value="Calde">Calde</option>
+        <option value="Delgado">Delgado</option>
+        <option value="	Zachepylivka">Zachepylivka</option>
+        <option value="Zevgolateió">Zevgolateió</option>
+        <option value="Iperó">Iperó</option>
+        </select>
+        <br>
+<label for="arrive" >Arriving At:</label>
+<select id="a" >
+        <option value=" "> --Choose city of departure: </option>
+        <option value="Chrysoúpolis">Chrysoúpolis</option>
+        <option value="Rossosh’">Rossosh’</option>
+        <option value="Carot">Carot</option>
+        <option value="Pallisa">Pallisa</option>
+        <option value="	Angelochóri">	Angelochóri</option>
+        <option value="Ipoh">Ipoh</option>
+        <option value="Bongandanga">Bongandanga</option>
+        <option value="Somita">Somita</option>
+        <option value="Dami">Dami</option>
+        <option value="Sindangsari">Sindangsari</option>
+        <option value="Pa Phayom">Pa Phayom</option>
+        <option value="	Ribeirão Preto">Ribeirão Preto</option>
+        <option value="Babatngon">Babatngon</option>
+        <option value="Paagahan">Paagahan</option>
+        <option value="Rudnya">Rudnya</option>
+        <option value="Marićka">Marićka</option>
+        <option value="São Luiz Gonzaga">São Luiz Gonzaga</option>
+        <option value="Tejakalapa">Tejakalapa</option>
+        <option value="Arras">Arras</option>
+        <option value="Bandaragung">Bandaragung</option>
+        <option value="Sakura">Sakura</option>
+        <option value="Xiji">Xiji</option>
+        <option value="Javelera">Javelera</option>
+        <option value="Qiqin">Qiqin</option>
+        <option value="Sumberbening">Sumberbening</option>
+        <option value="Boñgalon">Boñgalon</option>
+        <option value="Guamal">Guamal</option>
+        <option value="Dachang">Dachang</option>
+        <option value="Ketawang">Ketawang</option>
+        <option value="Sagana">Sagana</option>
+        <option value="Otun">Otun</option>
+        <option value="Kafr Şaqr">Kafr Şaqr</option>
+        <option value="Jasieniec">Jasieniec</option>
+        <option value="Paris 20">Paris 20</option>
+        <option value="Banjar Banyuning Barat">Banjar Banyuning Barat</option>
+        <option value="Mira">Mira</option>
+        <option value="Åkersberga">Åkersberga</option>
+        <option value="Magsaysay">Magsaysay</option>
+        <option value="Golug">Golug </option>
+        <option value="Granja">Granja</option>
+        <option value="Starryy Togul">Staryy Togul</option>
+        <option value="Bačka Topola">Bačka Topola</option>
+        <option value="Vetlanda">Vetlanda</option>
+        <option value="Kyshtym">Kyshtym</option>
+        <option value="Calde">Calde</option>
+        <option value="Delgado">Delgado</option>
+        <option value="	Zachepylivka">Zachepylivka</option>
+        <option value="Zevgolateió">Zevgolateió</option>
+        <option value="Iperó">Iperó</option>
+</select>
+<br>
+<label>Flight number:</label>
+<input id="fid" type="number">
+<br>
+
+<label>Ticket Price:</label>
+<input id="price" type="number">
+<br> 
+<button onclick="doPost()" id="flightsubmission" >Submit flight</button>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+
+<script src="/book.js"></script>
+</html>

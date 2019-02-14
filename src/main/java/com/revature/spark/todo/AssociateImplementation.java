@@ -11,11 +11,42 @@ import com.revature.spark.beans.Flight;
  * Within this class, you will implement the logic to calculate data for various
  * reports.
  * 
- * @author Your Name Here
+  @author Lowell Parker	
+ * 
+ * 
+ * 
  * 
  */
+
 public class AssociateImplementation {
 
+	
+	
+	
+	public static double[] psort(List<Flight> flights) {
+		double	temp; 
+		double [] arrayTP = new double[flights.size()];
+		boolean notSorted = true;
+		for(int i = 0; i < flights.size(); i++) {
+			arrayTP[i]	= flights.get(i).getTicketPrice();
+		}
+		
+		while (notSorted) {
+			notSorted = false;
+			for(int k =0; k < arrayTP.length-1; k++) {
+			if(arrayTP[k]>arrayTP[k+1]) {
+				temp = arrayTP[k];
+				arrayTP[k]= arrayTP[k+1];
+				arrayTP[k+1]=temp;
+				notSorted=true;
+				}
+			}	
+				
+		}
+		
+		return arrayTP;
+	}	
+	
 	/**
 	 * Find the total ticket sales of all flights.
 	 * 
@@ -23,17 +54,27 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double sum(List<Flight> flights) {
-		return 0.0;
+		double tpricetotal=0.0;
+		for(Flight fobject : flights) {
+			tpricetotal +=	fobject.getTicketPrice();
+		}
+		return tpricetotal;
 	}
 
 	/**
-	 * Find the lowest ticker price.
+	 * Find the lowest ticket price.
 	 * 
 	 * @param flights
 	 * @return
 	 */
 	public Double min(List<Flight> flights) {
-		return 0.0;
+			
+		
+			
+		double [] myarray = psort(flights);
+		
+		return myarray[0];
+	
 	}
 
 	/**
@@ -43,7 +84,8 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double max(List<Flight> flights) {
-		return 0.0;
+		
+		return psort(flights)[flights.size()-1];
 	}
 
 	/**
@@ -53,7 +95,12 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double avg(List<Flight> flights) {
-		return 0.0;
+		double total= 0;
+		
+		for(Flight fobject : flights) {
+		total += fobject.getTicketPrice();
+		}
+		return (total/flights.size());
 	}
 
 	/**
@@ -63,7 +110,22 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double median(List<Flight> flights) {
-		return 0.0;
+		
+		
+		double [] pd = psort(flights);
+		if(flights.size()%2 == 0) {
+		
+			return (pd[(pd.length/2)-1]+pd[pd.length/2])/2;
+			
+		}else
+			return pd[(pd.length-1)/2];
+			
+		
+		
+		
+		
+		
+		
 	}
 
 	/**
@@ -91,6 +153,13 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Map<Customer, Double> totalSalesPerCustomer(List<Flight> flights) {
+		
+		for(Flight flight : flights) {
+			System.out.println(flight.toString()); 
+			
+		
+		}
+		
 		return new HashMap<>();
 	}
 
